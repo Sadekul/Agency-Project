@@ -678,6 +678,7 @@ footer.page-footer {
     }
     p{
         text-align: justify !important;
+        color: #777777
     }
     .card-image{
         position: relative;
@@ -706,17 +707,48 @@ footer.page-footer {
     }
 }
 //bealive area scss
-.bealive-left{
-    background: url(../images/about-girl.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    width: 50%;
-    float: left;
-    display: inline-block;
+.we-bealieve{
+    .bealive-left{
+        background: url(../images/about-girl.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        width: 50%;
+        float: left;
+        display: inline-block;
+    }
+    .bealive-right{
+        height: 500px;
+        h2{
+            font-size: 34px;
+            font-weight: 600;
+        }
+        p{
+            font-size: $text-font;
+            font-weight: 300;
+            color: #777777;
+        }
+    }
 }
 
+//Team area scss
+.team-area{
+    padding: $section-padding;
+    .team-heading{
+        text-align: center;
+        h2{
+            font-size: 36px;
+            font-weight: 600;
+            text-shadow: 0px 5px 10px #999;
+        }
+        p{
+            font-size: $text-font;
+            font-weight: 300;
+            color: #777777;
+        }
+    }
+}
 
 //should-share scss
 .should-share{

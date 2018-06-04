@@ -521,7 +521,8 @@ footer.page-footer {
   .video-area h5 {
     text-align: left; }
   .video-area p {
-    text-align: justify !important; }
+    text-align: justify !important;
+    color: #777777; }
   .video-area .card-image {
     position: relative; }
     .video-area .card-image::after {
@@ -544,7 +545,7 @@ footer.page-footer {
       .video-area .card-image a:hover {
         background: linear-gradient(to left, #83B6FF 0%, #61D7FD 100%); }
 
-.bealive-left {
+.we-bealieve .bealive-left {
   background: url(../images/about-girl.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -553,6 +554,28 @@ footer.page-footer {
   width: 50%;
   float: left;
   display: inline-block; }
+.we-bealieve .bealive-right {
+  height: 500px; }
+  .we-bealieve .bealive-right h2 {
+    font-size: 34px;
+    font-weight: 600; }
+  .we-bealieve .bealive-right p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #777777; }
+
+.team-area {
+  padding: 80px 0; }
+  .team-area .team-heading {
+    text-align: center; }
+    .team-area .team-heading h2 {
+      font-size: 36px;
+      font-weight: 600;
+      text-shadow: 0px 5px 10px #999; }
+    .team-area .team-heading p {
+      font-size: 14px;
+      font-weight: 300;
+      color: #777777; }
 
 .should-share {
   background: url(../images/about-bg.jpg);
