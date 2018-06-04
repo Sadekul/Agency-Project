@@ -87,6 +87,10 @@ nav {
 nav.agency-nav {
     z-index: 999;
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
 }
 
 nav ul a {
@@ -614,6 +618,49 @@ footer.page-footer {
 
 
 //About page SCSS
+
+//about-heading scss
+.about-heading{
+    background: $bg-color;
+    margin-top: 65px;
+    color: $color-white;
+    .content {
+        padding: 40px 0;
+        h1{
+            counter-reset: 60px;
+            font-weight: 700;
+            margin: 0;
+        }
+        p{
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 300;
+            margin: 0;
+        }
+    }
+    ul{
+        padding: 0;
+        height: 170px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        li{
+            display: inline-block;
+            a{
+                color: $color-white;
+                margin: 0px 5px;
+                font-size: 13px;
+                font-weight: 300;
+                transition: .5s;
+                &:hover{
+                    color: $footer-color;
+                }
+            }
+        }
+    }
+    
+}
+//bealive area scss
 .bealive-left{
     background: url(../images/about-girl.jpg);
     background-position: center;
@@ -624,6 +671,46 @@ footer.page-footer {
     float: left;
     display: inline-block;
 }
+
+
+//should-share scss
+.should-share{
+    background: url(../images/about-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ddd;
+    width: 100%;
+}
+
+
+//client-logo scss
+.all-logo{
+    display: flex;
+    .single-logo {
+        margin: 0px 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

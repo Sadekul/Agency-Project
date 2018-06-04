@@ -76,7 +76,11 @@ nav {
 
 nav.agency-nav {
   z-index: 999;
-  position: absolute; }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff; }
 
 nav ul a {
   color: #000;
@@ -475,6 +479,38 @@ footer.page-footer {
           footer.page-footer .row .footer-right ul li a i.fab.fa-behance:hover {
             color: #1DA1F2; }
 
+.about-heading {
+  background: linear-gradient(to right, #83B6FF 0%, #61D7FD 100%);
+  margin-top: 65px;
+  color: #fff; }
+  .about-heading .content {
+    padding: 40px 0; }
+    .about-heading .content h1 {
+      counter-reset: 60px;
+      font-weight: 700;
+      margin: 0; }
+    .about-heading .content p {
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 300;
+      margin: 0; }
+  .about-heading ul {
+    padding: 0;
+    height: 170px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .about-heading ul li {
+      display: inline-block; }
+      .about-heading ul li a {
+        color: #fff;
+        margin: 0px 5px;
+        font-size: 13px;
+        font-weight: 300;
+        transition: .5s; }
+        .about-heading ul li a:hover {
+          color: #04091e; }
+
 .bealive-left {
   background: url(../images/about-girl.jpg);
   background-position: center;
@@ -484,5 +520,18 @@ footer.page-footer {
   width: 50%;
   float: left;
   display: inline-block; }
+
+.should-share {
+  background: url(../images/about-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ddd;
+  width: 100%; }
+
+.all-logo {
+  display: flex; }
+  .all-logo .single-logo {
+    margin: 0px 40px; }
 
 /*# sourceMappingURL=style.css.map */
