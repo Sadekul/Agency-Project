@@ -665,8 +665,49 @@ footer.page-footer {
     background: linear-gradient(to right, #83B6FF 0%, #61D7FD 100%); }
 
 .all-logo {
+  padding: 80px 0;
   display: flex; }
   .all-logo .single-logo {
     margin: 0px 40px; }
+
+.client-say {
+  padding: 80px 0;
+  background: #f9f9ff; }
+  .client-say .client-say-headign {
+    text-align: center; }
+    .client-say .client-say-headign h2 {
+      font-size: 36px;
+      font-weight: 600;
+      margin: 10px; }
+    .client-say .client-say-headign p {
+      font-size: 14px;
+      font-weight: 300;
+      color: #777; }
+  .client-say .client-content {
+    display: flex;
+    justify-content: space-between; }
+    .client-say .client-content .single-client {
+      width: 49%;
+      float: left; }
+      .client-say .client-content .single-client .client-left {
+        width: 25%;
+        float: left;
+        display: inline-block; }
+        .client-say .client-content .single-client .client-left .client-img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          overflow: hidden; }
+          .client-say .client-content .single-client .client-left .client-img img {
+            width: 100px; }
+      .client-say .client-content .single-client .client-info {
+        margin-left: 25%; }
+        .client-say .client-content .single-client .client-info p {
+          font-size: 14px;
+          font-weight: 300;
+          color: #777; }
+        .client-say .client-content .single-client .client-info h4 {
+          font-size: 18px;
+          font-weight: 600; }
 
 /*# sourceMappingURL=style.css.map */

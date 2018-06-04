@@ -872,13 +872,66 @@ footer.page-footer {
 
 //client-logo scss
 .all-logo{
+    padding: $section-padding;
     display: flex;
     .single-logo {
         margin: 0px 40px;
     }
 }
 
-
+//Client say scss
+.client-say{
+    padding: $section-padding;
+    background: #f9f9ff;
+    .client-say-headign{
+        text-align: center;
+        h2{
+            font-size: 36px;
+            font-weight: 600;
+            margin: 10px;
+        }
+        p{
+            font-size: $text-font;
+            font-weight: 300;
+            color: #777;
+        }
+    }
+    .client-content{
+        display: flex;
+        justify-content: space-between;
+        .single-client{
+            width: 49%;
+            float: left;
+            .client-left{
+                width: 25%;
+                float: left;
+                display: inline-block;
+                .client-img{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    img{
+                       width: 100px;
+                   }
+                }
+                
+            }
+            .client-info{
+                margin-left: 25%;
+                p{
+                    font-size: $text-font;
+                    font-weight: 300;
+                    color: #777;
+                 }
+                h4{
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
 
 
 
