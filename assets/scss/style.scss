@@ -1,0 +1,631 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800');
+@import "color";
+@import "fonts";
+@import "mixins";
+body{
+    font-family: 'Poppins', sans-serif;
+}
+img{
+    width: 100%;
+}
+
+.viewport{
+    width: 100%;
+    height: 100vh;
+    display: block;
+}
+.viewport-left-img{
+    width: 40%;
+    float: left;
+}
+.viewport-left-img img {
+    width: 560px;
+    margin-top: 170px;
+}
+.viewport-right-img{
+    width: 60%;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+.viewport-right-img img {
+    width: 400px;
+    float: right;
+}
+.viewport-content{
+    position: absolute;
+    top: 30%;
+    left: 0;
+}
+.offered-bg{
+    background: url(../images/service-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 426px;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 200px;
+    &::after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        background: rgba(4, 9, 30, 0.6);
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+}
+h2.center.brown-text img {
+    width: 40px;
+}
+.reviews-area{
+    position: relative;
+}
+
+.reviews-bg img {
+    width: 350px;
+    margin-top: 42%;
+}
+.review-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.card.icon-block {
+    z-index: 999;
+}
+
+
+// Nav scss
+nav {
+    background-color: $nav-bg;
+}
+nav.agency-nav {
+    z-index: 999;
+    position: absolute;
+}
+
+nav ul a {
+    color: $text-color;
+    font-size: $menu-font;
+    font-weight: 400;
+    text-transform: $upercase;
+}
+.agency-logo a img {
+    margin-top: 15px;
+}
+.agency-logo a{
+    height: 64px;
+    line-height: 37px;
+}
+.menu-btn {
+    float: right;
+}
+.menu-btn a {
+    color: $text-color;
+    font-size: $text-font;
+    font-weight: 400;
+    transition: .3s;
+    &:hover{
+        color: $color-white;
+        background: $bg-color !important;
+    }
+}
+.menu-btn a {
+    color: $text-color;
+    font-size: $text-font;
+    font-weight: 400;
+    border-radius: 20px;
+    padding: 0px 25px;
+}
+.viewport-content h2{
+    font-size: 36px;
+    font-weight: 100;
+    margin-bottom: 0px;
+}
+
+.viewport-content h1{
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0px;
+    text-transform: $upercase;
+}
+.viewport-content h4{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.viewport-content p{
+    font-size: $text-font;
+    font-weight: 300;
+    padding-right: 25px;
+}
+
+.viewport-content a{
+    background: $bg-color;
+    border-radius: 20px;
+    margin-top: 20px;
+    text-transform: capitalize;
+    transition: all 1s;
+    &:hover{
+        background: $hover-bg-color;
+    }
+}
+
+//digital-production scss 
+
+.digital-production {
+    padding: $section-padding;
+    h2 {
+        font-size: 48px;
+        font-weight: 600;
+    }
+}
+
+.digital-content p {
+    font-size: $text-font;
+    font-weight: 300;
+}
+
+.digital-content a {
+    font-size: $text-font;
+    font-weight: 400;
+    border-radius: 20px;
+    transition: .3s;
+    margin-top: 20px;
+    text-transform: capitalize;
+    &:hover{
+        color: #fff !important;
+        background: $bg-color;
+    }
+}
+
+.digital-bg{
+    position: relative;
+}
+.digital-bg a{
+    position: absolute;
+    top: 30%;
+    left: 0;
+}
+.digital-bg a.btn-floating.btn-large {
+    width: 100px;
+    height: 100px;
+    padding: 25px;
+    background: $bg-color;
+    transition: .4s;
+    box-shadow: #83B6FF; 
+    &:hover{
+        background: $hover-bg-color;
+    }
+}
+//our-offered scss
+.our-offered{
+    position: relative;
+}
+.offered-heading {
+    text-align: center;
+    padding-top: 10%;
+    color: $color-white;
+    p {
+        margin: 0;
+        font-size: $text-font;
+        text-transform: $upercase;
+        font-weight: 600;
+        color: $color-text;
+    }
+    h2 {
+        margin: 10px 0;
+        font-size: 36px;
+        font-weight: 300;
+        text-transform: capitalize;
+        color: $color-white;
+    }
+}
+
+.offered-box{
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 100%;
+}
+.card.icon-block {
+    padding: 40px 20px;
+    border-radius: 10px;
+    p {
+        font-size: $text-font;
+        font-weight: 300;
+        text-align: center;
+        line-height: 24px;
+    }
+    h2 {
+        margin-top: 0;
+    }
+    h5 {
+        font-size: 20px;
+        font-weight: 300;
+    }
+}
+ 
+//work-area scss
+.work-area{
+    padding: $section-padding;
+    .work-heading{
+        text-align: center;
+        p{
+            color: $color-text;
+            text-transform: $upercase;
+            font-size: $text-font;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+         h2{
+            color: $text-color;
+            text-transform: capitalize;
+            font-size: 36px;
+            font-weight: 300;
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+            li{
+                display: inline-block;
+                a{
+                    color: $text-color;
+                    font-size: $menu-font;
+                    font-weight: 600;
+                    padding: 20px 10px;
+                    transition: .3s;
+                    &:hover{
+                        color: $color-text;
+                    }
+                }
+            }
+        }
+    }
+    .card{
+        border-radius: 10px;
+    }
+}
+
+
+//Looking Area SCSS
+
+.looking{
+    padding: $section-padding;
+    background: #FAFCFF;
+    .card {
+        border-radius: 25px;
+    }
+    .looking-content{
+        h2 {
+            font-size: 36px;
+            font-weight: 100;
+            margin-bottom: 0px;
+        }
+        h1{
+            font-size: 60px;
+            font-weight: 700;
+            margin: 0px;
+            text-transform: $upercase;
+        }
+        h4{
+            font-size: 18px;
+            font-weight: 300;
+        }
+        p{
+            font-size: $text-font;
+            font-weight: 300;
+            padding-right: 25px;
+        }
+        a{
+            background: $bg-color;
+            border-radius: 20px;
+            margin-top: 20px;
+            text-transform: capitalize;
+            transition: all 1s;
+            &:hover{
+                background: $hover-bg-color;
+            }
+        }
+    } 
+}
+
+
+//our-features SCSS
+.our-features{
+    padding: $section-padding;
+    .features-heading{
+        text-align: center;
+        p{
+            color: $color-text;
+            text-transform: $upercase;
+            font-size: $text-font;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+        h2{
+            color: $text-color;
+            text-transform: capitalize;
+            font-size: 36px;
+            font-weight: 300;
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+    }
+    
+    .card.icon-block{
+        h2{
+            float: left;
+            width: 30%;
+            display: block;
+            margin-right: 70%;
+            margin-bottom: 20px;
+            img{
+                width: 70px;
+            }
+        }
+        h5{
+            text-align: left;
+        }
+        p{
+            text-align: justify;
+        }
+    }
+}
+
+//reviews-area SCSS
+.reviews-area{
+    background: #FAFCFF;
+    .review-content{
+        .reviews-heading{
+            padding-top: 80px;
+            text-align: center;
+            p{
+                color: $color-text;
+                text-transform: $upercase;
+                font-size: $text-font;
+                font-weight: 600;
+                margin-bottom: 0; 
+            }
+            h2{
+                color: $text-color;
+                text-transform: capitalize;
+                font-size: 36px;
+                font-weight: 300;
+                margin-top: 10px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+    .card.icon-block{
+        ul{
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        
+            li{
+                display: inline-block;
+                a{
+                    color: #FFC000;
+                    font-size: $text-font;
+                }
+            }
+        }
+    }
+}
+
+//blog-area SCSS
+.blog-area {
+    padding: $section-padding;
+    .blog-heading {
+        text-align: center;
+        p {
+            color: $color-text;
+            text-transform: $upercase;
+            font-size: $text-font;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+        h2 {
+            color: $text-color;
+            text-transform: capitalize;
+            font-size: 36px;
+            font-weight: 300;
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+        ul{
+            padding: 0;
+            li{
+                display: inline-block;
+                a{
+                    color: $text-color;
+                    font-size: $menu-font;
+                    font-weight: 600;
+                    padding: 20px 10px;
+                    transition: .3s;
+                    &:hover{
+                        color: $color-text;
+                    }
+                }
+            }
+        }
+    }
+    .card {
+        border-radius: 10px;
+        .card-content {
+            a {
+                background: $bg-color;
+                border-radius: 20px;
+                margin-top: 20px;
+                margin-right: 10px;
+                font-size: $menu-font;
+                font-weight: 500;
+                text-transform: capitalize;
+                transition: all 1s;
+                &:hover {
+                    background: $hover-bg-color;
+                }
+            }
+            a.white-btn{
+                font-size: $menu-font;
+                font-weight: 400;
+                background: $color-white;
+                color: $text-color;
+                transition: .3s;
+                &:hover{
+                    color: $color-white;
+                    background: $bg-color;
+                }
+            }
+            span.card-title{
+                font-size: 20px;
+                font-weight: 300;
+                margin: 20px 0;
+            }
+            p{
+                font-size: $text-font;
+                font-weight: 300;
+                color: #777777;
+                margin: 15px 0;
+            }
+        }
+    }
+
+    }
+
+//Footer SCSS
+footer.page-footer {
+    padding: $section-padding;
+    background-color: $footer-color;
+
+    .row {
+        margin-bottom: 0px;
+        .footer-left{
+            h5{
+                font-size: 18px;
+                font-weight: 600;
+            }
+            p{
+                color: #777;
+                font-size: 13px;
+                font-weight: 300;
+                a{
+                    color: #83b7ff;
+                    transition: .3s;
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .footer-middle{
+            h5{
+                font-size: 18px;
+                font-weight: 600;
+            }
+            p{
+                color: #777;
+                font-size: 13px;
+                font-weight: 300;
+            }
+            input[type="email"] {
+                width: 70% !important;
+                height: 45px;
+                color: $text-color;
+                background: #fff;
+                border-radius: 0px !important;
+            }
+            a{
+                padding: 23px 15px;
+                line-height: 4px;
+                margin-left: -5px;
+                border-radius: 0px;
+                margin-top: -2px;
+                background: $bg-color;
+                transition: .3s;
+                &:hover{
+                    color: $footer-color;
+                    background: $hover-bg-color;
+                }
+            }
+        }
+        .footer-right{
+            h5{
+                font-size: 18px;
+                font-weight: 600;
+            }
+            p{
+                color: #777;
+                font-size: 13px;
+                font-weight: 300;
+            }
+            ul{
+                li{
+                    display: inline-block;
+                    a{
+                       margin: 0px 8px;
+                        font-size: 16px;
+                        
+                         i.fab.fa-facebook-f{
+                            color: #fff;
+                             transition: .3s;
+                             &:hover{
+                                     color: #3C5A98;
+                             }
+                        }
+                         i.fab.fa-twitter{
+                            color: #fff;
+                             transition: .3s;
+                             &:hover{
+                                     color: #1DA1F2;
+                             }
+                        }
+                         i.fab.fa-dribbble{
+                            color: #fff;
+                             transition: .3s;
+                             &:hover{
+                                     color: #F171A6;
+                             }
+                        }
+                         i.fab.fa-behance{
+                            color: #fff;
+                             transition: .3s;
+                             &:hover{
+                                     color: #1DA1F2;
+                             }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
+//About page SCSS
+.bealive-left{
+    background: url(../images/about-girl.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 50%;
+    float: left;
+    display: inline-block;
+}
+
+
+
+
+
