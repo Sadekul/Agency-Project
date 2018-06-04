@@ -80,7 +80,7 @@ nav.agency-nav {
   top: 0;
   left: 0;
   width: 100%;
-  background: #fff; }
+  background: none; }
 
 nav ul a {
   color: #000;
@@ -709,5 +709,40 @@ footer.page-footer {
         .client-say .client-content .single-client .client-info h4 {
           font-size: 18px;
           font-weight: 600; }
+
+.blog-banner {
+  background: url(../images/blog-bg.jpg);
+  background-position: center;
+  background-color: #ddd;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  margin-top: 65px;
+  position: relative;
+  z-index: 0; }
+  .blog-banner::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1; }
+  .blog-banner .banner-content {
+    color: #fff;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
+    .blog-banner .banner-content h1 {
+      font-size: 50px;
+      font-weight: 600;
+      text-align: center; }
+    .blog-banner .banner-content p {
+      font-size: 16px;
+      font-weight: 300;
+      margin: 0; }
 
 /*# sourceMappingURL=style.css.map */
