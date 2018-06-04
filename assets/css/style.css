@@ -565,7 +565,8 @@ footer.page-footer {
     color: #777777; }
 
 .team-area {
-  padding: 80px 0; }
+  padding: 80px 0;
+  background: #f9f9ff; }
   .team-area .team-heading {
     text-align: center; }
     .team-area .team-heading h2 {
@@ -615,17 +616,53 @@ footer.page-footer {
       font-size: 18px;
       font-weight: 600; }
     .team-area .card .card-content p {
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 300;
       color: #777; }
 
 .should-share {
+  padding: 80px 0;
   background: url(../images/about-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #ddd;
-  width: 100%; }
+  width: 100%;
+  position: relative;
+  z-index: 0; }
+  .should-share::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1; }
+  .should-share .should-heading {
+    color: #fff;
+    text-align: center; }
+    .should-share .should-heading h2 {
+      font-size: 36px;
+      font-weight: 600; }
+    .should-share .should-heading p {
+      font-size: 14px;
+      font-weight: 300; }
+  .should-share .single-should .card {
+    background: none;
+    transition: all 1s; }
+    .should-share .single-should .card .card-content span {
+      font-size: 18px;
+      font-weight: 600; }
+      .should-share .single-should .card .card-content span i {
+        font-size: 30px;
+        margin-right: 5px; }
+    .should-share .single-should .card p {
+      font-size: 14px;
+      font-weight: 300;
+      text-align: justify; }
+  .should-share .single-should:hover {
+    background: linear-gradient(to right, #83B6FF 0%, #61D7FD 100%); }
 
 .all-logo {
   display: flex; }

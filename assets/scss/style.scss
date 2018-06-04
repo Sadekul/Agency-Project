@@ -735,6 +735,7 @@ footer.page-footer {
 //Team area scss
 .team-area {
     padding: $section-padding;
+    background: #f9f9ff;
     .team-heading {
         text-align: center;
         h2 {
@@ -798,7 +799,7 @@ footer.page-footer {
                 font-weight: 600;
             }
             p{
-                font-size: $text-font;
+                font-size: 13px;
                 font-weight: 300;
                 color: #777;
             }
@@ -810,12 +811,62 @@ footer.page-footer {
 
 //should-share scss
 .should-share{
+    padding: $section-padding;
     background: url(../images/about-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #ddd;
     width: 100%;
+    position: relative;
+    z-index: 0;
+    &::after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: -1;
+    }
+    .should-heading{
+        color: $color-white;
+        text-align: center;
+        h2{
+            font-size: 36px;
+            font-weight: 600;
+        }
+        p{
+            font-size: $text-font;
+            font-weight: 300;
+        }
+    }
+    .single-should{
+        .card{
+            background: none;
+            transition: all 1s;
+            .card-content{
+                span{
+                    font-size: 18px;
+                    font-weight: 600;
+                    i{
+                        font-size: 30px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+            p{
+                font-size: $text-font;
+                font-weight: 300;
+                text-align: justify;
+            }
+        }
+        &:hover{
+            background: $bg-color;
+        }
+        
+    }
 }
 
 
