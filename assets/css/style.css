@@ -834,19 +834,56 @@ footer.page-footer {
       top: 35px;
       right: 20px;
       font-size: 20px; }
-  .blog-section aside .aside-client .card {
-    background: #f9f9ff !important; }
-    .blog-section aside .aside-client .card .card-image {
-      padding-top: 10px; }
-      .blog-section aside .aside-client .card .card-image img {
-        height: 110px;
-        width: 110px;
-        margin: 0px auto;
-        margin-top: 20px; }
-    .blog-section aside .aside-client .card .card-content {
-      text-align: center; }
-      .blog-section aside .aside-client .card .card-content span {
-        font-size: 18px;
-        font-weight: 600; }
+  .blog-section aside .aside-client {
+    margin-bottom: 30px; }
+    .blog-section aside .aside-client .card {
+      background: #f9f9ff !important; }
+      .blog-section aside .aside-client .card .card-image {
+        padding-top: 10px; }
+        .blog-section aside .aside-client .card .card-image img {
+          height: 110px;
+          width: 110px;
+          margin: 0px auto;
+          margin-top: 20px; }
+      .blog-section aside .aside-client .card .card-content {
+        text-align: center; }
+        .blog-section aside .aside-client .card .card-content span {
+          font-size: 18px;
+          font-weight: 600; }
+        .blog-section aside .aside-client .card .card-content p {
+          font-size: 14px;
+          font-weight: 300;
+          color: #777; }
+        .blog-section aside .aside-client .card .card-content ul {
+          padding: 0;
+          margin: 20px 0; }
+          .blog-section aside .aside-client .card .card-content ul li {
+            display: inline-block; }
+            .blog-section aside .aside-client .card .card-content ul li a {
+              font-size: 16px;
+              color: #04091e;
+              margin: 0px 10px;
+              transition: all .4s; }
+              .blog-section aside .aside-client .card .card-content ul li a:hover {
+                color: #83b6ff !important; }
+  .blog-section aside .post-catgories {
+    background: #f9f9ff; }
+    .blog-section aside .post-catgories h4 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 0;
+      margin-bottom: 20px; }
+    .blog-section aside .post-catgories .collection {
+      border: none; }
+      .blog-section aside .post-catgories .collection a {
+        font-size: 14px;
+        font-weight: 300;
+        color: #777;
+        margin-bottom: 10px; }
+        .blog-section aside .post-catgories .collection a span {
+          float: right; }
+      .blog-section aside .post-catgories .collection a.active {
+        color: #fff;
+        background: linear-gradient(to right, #83B6FF 0%, #61D7FD 100%); }
 
 /*# sourceMappingURL=style.css.map */

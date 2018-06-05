@@ -1094,6 +1094,7 @@ footer.page-footer {
             }
         }
         .aside-client{
+            margin-bottom: 30px;
             .card{
                 background: #f9f9ff !important;
                 .card-image{
@@ -1111,6 +1112,52 @@ footer.page-footer {
                         font-size: 18px;
                         font-weight: 600;
                     }
+                    p{
+                        font-size: $text-font;
+                        font-weight: 300;
+                        color: #777;
+                    }
+                    ul{
+                        padding: 0;
+                        margin: 20px 0;
+                        li{
+                            display: inline-block;
+                            a{
+                                font-size: 16px;
+                                color: #04091e;
+                                margin: 0px 10px;
+                                transition: all .4s;
+                                &:hover{
+                                    color: #83b6ff !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .post-catgories{
+            background: #f9f9ff;
+            h4{
+                font-size: 18px;
+                font-weight: 600;
+                margin-top: 0;
+                margin-bottom: 20px;
+            }
+            .collection{
+                border: none;
+                a{
+                    font-size: $text-font;
+                    font-weight: 300;
+                    color: #777;
+                    margin-bottom: 10px;
+                    span{
+                        float: right;
+                    }
+                }
+                a.active{
+                    color: #fff;
+                    background: $bg-color;
                 }
             }
         }
