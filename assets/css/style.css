@@ -557,12 +557,13 @@ footer.page-footer {
 .we-bealieve .bealive-right {
   height: 500px; }
   .we-bealieve .bealive-right h2 {
-    font-size: 34px;
+    font-size: 20px;
     font-weight: 600; }
   .we-bealieve .bealive-right p {
     font-size: 14px;
     font-weight: 300;
-    color: #777777; }
+    color: #777777;
+    text-align: justify; }
 
 .team-area {
   padding: 80px 0;
@@ -744,5 +745,108 @@ footer.page-footer {
       font-size: 16px;
       font-weight: 300;
       margin: 0; }
+
+.blog-section {
+  padding: 80px 0; }
+  .blog-section .single-big-blog {
+    margin-bottom: 30px; }
+    .blog-section .single-big-blog .card .card-content .crd-btn {
+      margin-bottom: 20px; }
+      .blog-section .single-big-blog .card .card-content .crd-btn a {
+        font-size: 12px;
+        text-transform: capitalize;
+        font-weight: 300;
+        padding: 0px 15px;
+        height: 25px;
+        line-height: 25px;
+        border-radius: 0px;
+        background: none;
+        color: #000;
+        transition: all .4s;
+        margin-right: 5px; }
+        .blog-section .single-big-blog .card .card-content .crd-btn a:hover {
+          background: linear-gradient(to right, #83B6FF 0%, #61D7FD 100%); }
+    .blog-section .single-big-blog .card .card-content span {
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 15px; }
+    .blog-section .single-big-blog .card .card-content p {
+      font-size: 14px;
+      font-weight: 300;
+      color: #777;
+      text-align: justify; }
+    .blog-section .single-big-blog .card .card-action {
+      height: 100px; }
+      .blog-section .single-big-blog .card .card-action .blog-user {
+        width: 30%;
+        float: left; }
+        .blog-section .single-big-blog .card .card-action .blog-user .user-img {
+          width: 50px;
+          height: 50px;
+          overflow: hidden;
+          float: left; }
+          .blog-section .single-big-blog .card .card-action .blog-user .user-img img {
+            height: 90px;
+            width: 70px; }
+        .blog-section .single-big-blog .card .card-action .blog-user .user-info {
+          margin-left: 10px;
+          margin-top: 5px;
+          font-size: 10px;
+          float: left; }
+          .blog-section .single-big-blog .card .card-action .blog-user .user-info h4 {
+            font-size: 14px;
+            font-weight: 500;
+            margin: 0; }
+          .blog-section .single-big-blog .card .card-action .blog-user .user-info p {
+            font-size: 12px;
+            font-weight: 300;
+            color: #777;
+            margin-top: 5px; }
+      .blog-section .single-big-blog .card .card-action .blog-cmnt {
+        width: 70%;
+        float: left; }
+        .blog-section .single-big-blog .card .card-action .blog-cmnt ul {
+          float: right;
+          padding: 0;
+          margin: 15px 0; }
+          .blog-section .single-big-blog .card .card-action .blog-cmnt ul li {
+            display: inline-block; }
+            .blog-section .single-big-blog .card .card-action .blog-cmnt ul li a {
+              margin: 0px 5px !important;
+              color: #999 !important;
+              font-size: 14px;
+              text-transform: capitalize !important;
+              transition: all .4s; }
+              .blog-section .single-big-blog .card .card-action .blog-cmnt ul li a:hover {
+                color: #04091e !important; }
+  .blog-section aside .search-box {
+    background: #f9f9ff;
+    position: relative;
+    margin-bottom: 30px; }
+    .blog-section aside .search-box input[type="search"] {
+      background-color: #fff !important;
+      height: 45px !important;
+      margin-bottom: 0 !important;
+      border: 1px solid #ddd;
+      padding: 0px 5px; }
+    .blog-section aside .search-box a {
+      position: absolute;
+      top: 35px;
+      right: 20px;
+      font-size: 20px; }
+  .blog-section aside .aside-client .card {
+    background: #f9f9ff !important; }
+    .blog-section aside .aside-client .card .card-image {
+      padding-top: 10px; }
+      .blog-section aside .aside-client .card .card-image img {
+        height: 110px;
+        width: 110px;
+        margin: 0px auto;
+        margin-top: 20px; }
+    .blog-section aside .aside-client .card .card-content {
+      text-align: center; }
+      .blog-section aside .aside-client .card .card-content span {
+        font-size: 18px;
+        font-weight: 600; }
 
 /*# sourceMappingURL=style.css.map */

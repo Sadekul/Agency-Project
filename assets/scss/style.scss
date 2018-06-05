@@ -721,13 +721,14 @@ footer.page-footer {
     .bealive-right{
         height: 500px;
         h2{
-            font-size: 34px;
+            font-size: 20px;
             font-weight: 600;
         }
         p{
             font-size: $text-font;
             font-weight: 300;
             color: #777777;
+            text-align: justify;
         }
     }
 }
@@ -975,7 +976,146 @@ footer.page-footer {
 }
 
 
-
+//blog-section scss
+.blog-section{
+    padding: $section-padding;
+    .single-big-blog {
+        margin-bottom: 30px;
+        .card{
+            .card-content{
+                
+                .crd-btn {
+                    margin-bottom: 20px;
+                    a{
+                        font-size: 12px;
+                        text-transform: capitalize;
+                        font-weight: 300;
+                        padding: 0px 15px;
+                        height: 25px;
+                        line-height: 25px;
+                        border-radius: 0px;
+                        background: none;
+                        color: #000;
+                        transition: all .4s;
+                        margin-right: 5px;
+                        &:hover{
+                            background: $bg-color;
+                        }
+                    }
+                }
+                span{
+                    font-size: 36px;
+                    font-weight: 600;
+                    margin-bottom: 15px;
+                }
+                p{
+                    font-size: 14px;
+                    font-weight: 300;
+                    color: #777;
+                    text-align: justify;
+                }
+            }
+            .card-action{
+                height: 100px;
+                .blog-user{
+                    width: 30%;
+                    float: left;
+                    .user-img{
+                            width: 50px;
+                            height: 50px;
+                            overflow: hidden;
+                            float: left;
+                        img {
+                            height: 90px;
+                            width: 70px;
+                        }
+                    }
+                    .user-info {
+                        margin-left: 10px;
+                        margin-top: 5px;
+                        font-size: 10px;
+                        float: left;
+                        h4{
+                            font-size: 14px;
+                            font-weight: 500;
+                            margin: 0;
+                        }
+                        p{
+                            font-size: 12px;
+                            font-weight: 300;
+                            color: #777;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+                .blog-cmnt{
+                    width: 70%;
+                    float: left;
+                    ul{
+                        float: right;
+                        padding: 0;
+                        margin: 15px 0;
+                        li{
+                            display: inline-block;
+                            a{
+                            margin: 0px 5px !important;
+                            color: #999 !important;
+                            font-size: 14px;
+                            text-transform: capitalize !important;
+                            transition: all .4s;
+                             &:hover{
+                                    color: #04091e !important;
+                                }       
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+    aside{
+        .search-box{
+            background: #f9f9ff;
+            position: relative;
+            margin-bottom: 30px;
+            input[type="search"] {
+                background-color: #fff !important;
+                height: 45px !important;
+                margin-bottom: 0 !important;
+                border: 1px solid #ddd;
+                padding: 0px 5px;
+            }
+            a {
+                position: absolute;
+                top: 35px;
+                right: 20px;
+                font-size: 20px;
+            }
+        }
+        .aside-client{
+            .card{
+                background: #f9f9ff !important;
+                .card-image{
+                    padding-top: 10px;
+                    img{
+                        height: 110px;
+                        width: 110px;
+                        margin: 0px auto;
+                        margin-top: 20px;
+                    }
+                }
+                .card-content{
+                    text-align: center;
+                    span{
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
