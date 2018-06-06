@@ -1534,6 +1534,78 @@ footer.page-footer {
 }
 
 
+//privacy page scss
+.privacy-area{
+    padding: $section-padding;
+        .privacy-contetnt{
+            p{
+                font-size: $text-font;
+                font-weight: 300;
+                color: #777;
+                text-align: justify;
+             }
+            h4{
+                font-size: 18px;
+                font-weight: 600;
+                margin-top: 50px;
+            }
+    }
+}
+
+.subscribe-area{
+    padding: $section-padding;
+    background: #f9f9ff;
+    .subscribe-content{
+        text-align: center;
+        padding: $section-padding;
+         position: relative;
+            min-height: 300px;
+        background: #f9f9ff;
+        h2{
+            font-size: 36px;
+            font-weight: 600;
+            margin: 0;
+            text-shadow: 2px 2px 10px #999;
+        }
+        p{
+            margin: 10px 0;
+            font-size: 14px;
+            font-weight: 300;
+            color: #777;
+        }
+        
+        input[type="email"] {
+            width: 85% !important;
+            float: left;
+            background: #fff !important;
+            border-radius: 50px !important;
+            margin-left: 50px !important;
+            padding-left: 10px !important;
+            margin-top: 20px;
+        }
+        a{
+            position: absolute;
+            bottom: 79px;
+            right: 37px;
+            border-radius: 50px;
+            width: 160px;
+            padding: 0px 10px !important;
+            line-height: 36px;
+            font-size: $text-font;
+            font-weight: 500;
+            text-transform: capitalize;
+                height: 39px;
+            background: $bg-color;
+            transition: all .3s;
+            &:hover{
+                background: $hover-bg-color;
+            }
+            i.fas.fa-arrow-right {
+                font-size: $text-font;
+            }
+        }
+    }
+}
 
 
 
