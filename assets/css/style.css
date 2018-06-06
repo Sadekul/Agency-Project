@@ -1226,4 +1226,28 @@ footer.page-footer {
       .subscribe-area .subscribe-content a i.fas.fa-arrow-right {
         font-size: 14px; }
 
+.contact-address {
+  padding: 80px 0; }
+  .contact-address .single-address {
+    text-align: center;
+    min-height: 200px; }
+    .contact-address .single-address h6 {
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase; }
+    .contact-address .single-address p {
+      font-size: 14px;
+      font-weight: 300;
+      color: #777; }
+
+.map-style {
+  height: 400px;
+  width: 100%; }
+
+.from-area {
+  padding: 80px 0; }
+  .from-area .contact-form {
+    padding-top: 80px;
+    padding-bottom: 80px; }
+
 /*# sourceMappingURL=style.css.map */

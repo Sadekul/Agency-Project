@@ -1607,10 +1607,37 @@ footer.page-footer {
     }
 }
 
+// Contact page scss
+.contact-address{
+    padding: $section-padding;
+    .single-address{
+        text-align: center;
+        min-height: 200px;
+        h6{
+            font-size: $text-font;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        p{
+            font-size: $text-font;
+            font-weight: 300;
+            color: #777;
+        }
+    }
+}
+.map-style{
+    height: 400px;
+    width: 100%;
+}
 
 
-
-
+.from-area{
+    padding: $section-padding;
+    .contact-form{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
 
 
 
