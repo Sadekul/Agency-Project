@@ -2,42 +2,49 @@
 @import "color";
 @import "fonts";
 @import "mixins";
-body{
+body {
     font-family: 'Poppins', sans-serif;
 }
-img{
+
+img {
     width: 100%;
 }
 
-.viewport{
+.viewport {
     width: 100%;
     height: 100vh;
     display: block;
 }
-.viewport-left-img{
+
+.viewport-left-img {
     width: 40%;
     float: left;
 }
+
 .viewport-left-img img {
     width: 560px;
     margin-top: 170px;
 }
-.viewport-right-img{
+
+.viewport-right-img {
     width: 60%;
     height: 100%;
     float: right;
     position: relative;
 }
+
 .viewport-right-img img {
     width: 400px;
     float: right;
 }
-.viewport-content{
+
+.viewport-content {
     position: absolute;
     top: 30%;
     left: 0;
 }
-.offered-bg{
+
+.offered-bg {
     background: url(../images/service-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -46,7 +53,7 @@ img{
     position: relative;
     z-index: 0;
     margin-bottom: 200px;
-    &::after{
+    &::after {
         position: absolute;
         top: 0;
         left: 0;
@@ -57,10 +64,12 @@ img{
         z-index: -1;
     }
 }
+
 h2.center.brown-text img {
     width: 40px;
 }
-.reviews-area{
+
+.reviews-area {
     position: relative;
 }
 
@@ -68,7 +77,8 @@ h2.center.brown-text img {
     width: 350px;
     margin-top: 42%;
 }
-.review-content{
+
+.review-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -84,6 +94,7 @@ h2.center.brown-text img {
 nav {
     background-color: $nav-bg;
 }
+
 nav.agency-nav {
     z-index: 999;
     position: absolute;
@@ -99,26 +110,31 @@ nav ul a {
     font-weight: 400;
     text-transform: $upercase;
 }
+
 .agency-logo a img {
     margin-top: 15px;
 }
-.agency-logo a{
+
+.agency-logo a {
     height: 64px;
     line-height: 37px;
 }
+
 .menu-btn {
     float: right;
 }
+
 .menu-btn a {
     color: $text-color;
     font-size: $text-font;
     font-weight: 400;
     transition: .3s;
-    &:hover{
+    &:hover {
         color: $color-white;
         background: $bg-color !important;
     }
 }
+
 .menu-btn a {
     color: $text-color;
     font-size: $text-font;
@@ -126,42 +142,43 @@ nav ul a {
     border-radius: 20px;
     padding: 0px 25px;
 }
-.viewport-content h2{
+
+.viewport-content h2 {
     font-size: 36px;
     font-weight: 100;
     margin-bottom: 0px;
 }
 
-.viewport-content h1{
+.viewport-content h1 {
     font-size: 60px;
     font-weight: 700;
     margin: 0px;
     text-transform: $upercase;
 }
-.viewport-content h4{
+
+.viewport-content h4 {
     font-size: 18px;
     font-weight: 300;
 }
 
-.viewport-content p{
+.viewport-content p {
     font-size: $text-font;
     font-weight: 300;
     padding-right: 25px;
 }
 
-.viewport-content a{
+.viewport-content a {
     background: $bg-color;
     border-radius: 20px;
     margin-top: 20px;
     text-transform: capitalize;
     transition: all 1s;
-    &:hover{
+    &:hover {
         background: $hover-bg-color;
     }
 }
 
 //digital-production scss 
-
 .digital-production {
     padding: $section-padding;
     h2 {
@@ -182,35 +199,39 @@ nav ul a {
     transition: .3s;
     margin-top: 20px;
     text-transform: capitalize;
-    &:hover{
+    &:hover {
         color: #fff !important;
         background: $bg-color;
     }
 }
 
-.digital-bg{
+.digital-bg {
     position: relative;
 }
-.digital-bg a{
+
+.digital-bg a {
     position: absolute;
     top: 30%;
     left: 0;
 }
+
 .digital-bg a.btn-floating.btn-large {
     width: 100px;
     height: 100px;
     padding: 25px;
     background: $bg-color;
     transition: .4s;
-    box-shadow: #83B6FF; 
-    &:hover{
+    box-shadow: #83B6FF;
+    &:hover {
         background: $hover-bg-color;
     }
 }
+
 //our-offered scss
-.our-offered{
+.our-offered {
     position: relative;
 }
+
 .offered-heading {
     text-align: center;
     padding-top: 10%;
@@ -231,12 +252,13 @@ nav ul a {
     }
 }
 
-.offered-box{
+.offered-box {
     position: absolute;
     top: 60%;
     left: 0;
     width: 100%;
 }
+
 .card.icon-block {
     padding: 40px 20px;
     border-radius: 10px;
@@ -254,20 +276,20 @@ nav ul a {
         font-weight: 300;
     }
 }
- 
+
 //work-area scss
-.work-area{
+.work-area {
     padding: $section-padding;
-    .work-heading{
+    .work-heading {
         text-align: center;
-        p{
+        p {
             color: $color-text;
             text-transform: $upercase;
             font-size: $text-font;
             font-weight: 600;
             margin-bottom: 0;
         }
-         h2{
+        h2 {
             color: $text-color;
             text-transform: capitalize;
             font-size: 36px;
@@ -279,83 +301,82 @@ nav ul a {
             padding: 0;
             margin: 0;
             display: inline-block;
-            li{
+            li {
                 display: inline-block;
-                a{
+                a {
                     color: $text-color;
                     font-size: $menu-font;
                     font-weight: 600;
                     padding: 20px 10px;
                     transition: .3s;
-                    &:hover{
+                    &:hover {
                         color: $color-text;
                     }
                 }
             }
         }
     }
-    .card{
+    .card {
         border-radius: 10px;
     }
 }
 
 
 //Looking Area SCSS
-
-.looking{
+.looking {
     padding: $section-padding;
     background: #FAFCFF;
     .card {
         border-radius: 25px;
     }
-    .looking-content{
+    .looking-content {
         h2 {
             font-size: 36px;
             font-weight: 100;
             margin-bottom: 0px;
         }
-        h1{
+        h1 {
             font-size: 60px;
             font-weight: 700;
             margin: 0px;
             text-transform: $upercase;
         }
-        h4{
+        h4 {
             font-size: 18px;
             font-weight: 300;
         }
-        p{
+        p {
             font-size: $text-font;
             font-weight: 300;
             padding-right: 25px;
         }
-        a{
+        a {
             background: $bg-color;
             border-radius: 20px;
             margin-top: 20px;
             text-transform: capitalize;
             transition: all 1s;
-            &:hover{
+            &:hover {
                 background: $hover-bg-color;
             }
         }
-    } 
+    }
 }
 
 
 //our-features SCSS
-.our-features{
+.our-features {
     padding: $section-padding;
-    .features-heading{
+    .features-heading {
         text-align: center;
-        p{
+        p {
             color: $color-text;
             text-transform: $upercase;
             font-size: $text-font;
             font-weight: 600;
             margin-bottom: 0;
         }
-        h2{
+        h2 {
             color: $text-color;
             text-transform: capitalize;
             font-size: 36px;
@@ -364,42 +385,42 @@ nav ul a {
             margin-bottom: 50px;
         }
     }
-    
-    .card.icon-block{
-        h2{
+
+    .card.icon-block {
+        h2 {
             float: left;
             width: 30%;
             display: block;
             margin-right: 70%;
             margin-bottom: 20px;
-            img{
+            img {
                 width: 70px;
             }
         }
-        h5{
+        h5 {
             text-align: left;
         }
-        p{
+        p {
             text-align: justify;
         }
     }
 }
 
 //reviews-area SCSS
-.reviews-area{
+.reviews-area {
     background: #FAFCFF;
-    .review-content{
-        .reviews-heading{
+    .review-content {
+        .reviews-heading {
             padding-top: 80px;
             text-align: center;
-            p{
+            p {
                 color: $color-text;
                 text-transform: $upercase;
                 font-size: $text-font;
                 font-weight: 600;
-                margin-bottom: 0; 
+                margin-bottom: 0;
             }
-            h2{
+            h2 {
                 color: $text-color;
                 text-transform: capitalize;
                 font-size: 36px;
@@ -409,15 +430,15 @@ nav ul a {
             }
         }
     }
-    .card.icon-block{
-        ul{
+    .card.icon-block {
+        ul {
             padding: 0;
             margin: 0;
             text-align: center;
-        
-            li{
+
+            li {
                 display: inline-block;
-                a{
+                a {
                     color: #FFC000;
                     font-size: $text-font;
                 }
@@ -446,17 +467,17 @@ nav ul a {
             margin-top: 10px;
             margin-bottom: 50px;
         }
-        ul{
+        ul {
             padding: 0;
-            li{
+            li {
                 display: inline-block;
-                a{
+                a {
                     color: $text-color;
                     font-size: $menu-font;
                     font-weight: 600;
                     padding: 20px 10px;
                     transition: .3s;
-                    &:hover{
+                    &:hover {
                         color: $color-text;
                     }
                 }
@@ -479,23 +500,23 @@ nav ul a {
                     background: $hover-bg-color;
                 }
             }
-            a.white-btn{
+            a.white-btn {
                 font-size: $menu-font;
                 font-weight: 400;
                 background: $color-white;
                 color: $text-color;
                 transition: .3s;
-                &:hover{
+                &:hover {
                     color: $color-white;
                     background: $bg-color;
                 }
             }
-            span.card-title{
+            span.card-title {
                 font-size: 20px;
                 font-weight: 300;
                 margin: 20px 0;
             }
-            p{
+            p {
                 font-size: $text-font;
                 font-weight: 300;
                 color: #777777;
@@ -504,7 +525,7 @@ nav ul a {
         }
     }
 
-    }
+}
 
 //Footer SCSS
 footer.page-footer {
@@ -513,30 +534,30 @@ footer.page-footer {
 
     .row {
         margin-bottom: 0px;
-        .footer-left{
-            h5{
+        .footer-left {
+            h5 {
                 font-size: 18px;
                 font-weight: 600;
             }
-            p{
+            p {
                 color: #777;
                 font-size: 13px;
                 font-weight: 300;
-                a{
+                a {
                     color: #83b7ff;
                     transition: .3s;
-                    &:hover{
+                    &:hover {
                         color: #fff;
                     }
                 }
             }
         }
-        .footer-middle{
-            h5{
+        .footer-middle {
+            h5 {
                 font-size: 18px;
                 font-weight: 600;
             }
-            p{
+            p {
                 color: #777;
                 font-size: 13px;
                 font-weight: 300;
@@ -548,7 +569,7 @@ footer.page-footer {
                 background: #fff;
                 border-radius: 0px !important;
             }
-            a{
+            a {
                 padding: 23px 15px;
                 line-height: 4px;
                 margin-left: -5px;
@@ -556,56 +577,56 @@ footer.page-footer {
                 margin-top: -2px;
                 background: $bg-color;
                 transition: .3s;
-                &:hover{
+                &:hover {
                     color: $footer-color;
                     background: $hover-bg-color;
                 }
             }
         }
-        .footer-right{
-            h5{
+        .footer-right {
+            h5 {
                 font-size: 18px;
                 font-weight: 600;
             }
-            p{
+            p {
                 color: #777;
                 font-size: 13px;
                 font-weight: 300;
             }
-            ul{
-                li{
+            ul {
+                li {
                     display: inline-block;
-                    a{
-                       margin: 0px 8px;
+                    a {
+                        margin: 0px 8px;
                         font-size: 16px;
-                        
-                         i.fab.fa-facebook-f{
+
+                        i.fab.fa-facebook-f {
                             color: #fff;
-                             transition: .3s;
-                             &:hover{
-                                     color: #3C5A98;
-                             }
+                            transition: .3s;
+                            &:hover {
+                                color: #3C5A98;
+                            }
                         }
-                         i.fab.fa-twitter{
+                        i.fab.fa-twitter {
                             color: #fff;
-                             transition: .3s;
-                             &:hover{
-                                     color: #1DA1F2;
-                             }
+                            transition: .3s;
+                            &:hover {
+                                color: #1DA1F2;
+                            }
                         }
-                         i.fab.fa-dribbble{
+                        i.fab.fa-dribbble {
                             color: #fff;
-                             transition: .3s;
-                             &:hover{
-                                     color: #F171A6;
-                             }
+                            transition: .3s;
+                            &:hover {
+                                color: #F171A6;
+                            }
                         }
-                         i.fab.fa-behance{
+                        i.fab.fa-behance {
                             color: #fff;
-                             transition: .3s;
-                             &:hover{
-                                     color: #1DA1F2;
-                             }
+                            transition: .3s;
+                            &:hover {
+                                color: #1DA1F2;
+                            }
                         }
                     }
                 }
@@ -618,49 +639,48 @@ footer.page-footer {
 
 
 //About page SCSS
-
 //about-heading scss
-.about-heading{
+.about-heading {
     background: $bg-color;
     margin-top: 65px;
     color: $color-white;
     .content {
         padding: 40px 0;
-        h1{
+        h1 {
             counter-reset: 60px;
             font-weight: 700;
             margin: 0;
             text-transform: uppercase;
         }
-        p{
+        p {
             font-size: 16px;
             line-height: 26px;
             font-weight: 300;
             margin: 0;
         }
     }
-    ul{
+    ul {
         padding: 0;
         height: 170px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        li{
+        li {
             display: inline-block;
-            a{
+            a {
                 color: $color-white;
                 margin: 0px 5px;
                 font-size: 13px;
                 font-weight: 300;
                 transition: .5s;
                 text-transform: uppercase;
-                &:hover{
+                &:hover {
                     color: $footer-color;
                 }
             }
         }
     }
-    
+
 }
 
 //video-area scss
@@ -675,16 +695,16 @@ footer.page-footer {
         }
 
     }
-    h5{
+    h5 {
         text-align: left;
     }
-    p{
+    p {
         text-align: justify !important;
         color: #777777
     }
-    .card-image{
+    .card-image {
         position: relative;
-        &::after{
+        &::after {
             position: absolute;
             content: "";
             top: 0;
@@ -693,7 +713,7 @@ footer.page-footer {
             height: 100%;
             background: rgba(131, 182, 255, 0.85);
         }
-        a{
+        a {
             top: 35%;
             left: 40%;
             width: 100px;
@@ -701,16 +721,17 @@ footer.page-footer {
             padding: 25px;
             background: $bg-color;
             transition: .4s;
-            box-shadow: #83B6FF; 
-            &:hover{
+            box-shadow: #83B6FF;
+            &:hover {
                 background: $hover-bg-color;
             }
         }
     }
 }
+
 //bealive area scss
-.we-bealieve{
-    .bealive-left{
+.we-bealieve {
+    .bealive-left {
         background: url(../images/about-girl.jpg);
         background-position: center;
         background-repeat: no-repeat;
@@ -720,13 +741,13 @@ footer.page-footer {
         float: left;
         display: inline-block;
     }
-    .bealive-right{
+    .bealive-right {
         height: 500px;
-        h2{
+        h2 {
             font-size: 20px;
             font-weight: 600;
         }
-        p{
+        p {
             font-size: $text-font;
             font-weight: 300;
             color: #777777;
@@ -797,11 +818,11 @@ footer.page-footer {
         .card-content {
             padding: 15px;
             text-align: center;
-            span{
+            span {
                 font-size: 18px;
                 font-weight: 600;
             }
-            p{
+            p {
                 font-size: 13px;
                 font-weight: 300;
                 color: #777;
@@ -813,7 +834,7 @@ footer.page-footer {
 }
 
 //should-share scss
-.should-share{
+.should-share {
     padding: $section-padding;
     background: url(../images/about-bg.jpg);
     background-size: cover;
@@ -823,7 +844,7 @@ footer.page-footer {
     width: 100%;
     position: relative;
     z-index: 0;
-    &::after{
+    &::after {
         position: absolute;
         top: 0;
         left: 0;
@@ -833,48 +854,48 @@ footer.page-footer {
         background: rgba(0, 0, 0, 0.8);
         z-index: -1;
     }
-    .should-heading{
+    .should-heading {
         color: $color-white;
         text-align: center;
-        h2{
+        h2 {
             font-size: 36px;
             font-weight: 600;
         }
-        p{
+        p {
             font-size: $text-font;
             font-weight: 300;
         }
     }
-    .single-should{
-        .card{
+    .single-should {
+        .card {
             background: none;
             transition: all 1s;
-            .card-content{
-                span{
+            .card-content {
+                span {
                     font-size: 18px;
                     font-weight: 600;
-                    i{
+                    i {
                         font-size: 30px;
                         margin-right: 5px;
                     }
                 }
             }
-            p{
+            p {
                 font-size: $text-font;
                 font-weight: 300;
                 text-align: justify;
             }
         }
-        &:hover{
+        &:hover {
             background: $bg-color;
         }
-        
+
     }
 }
 
 
 //client-logo scss
-.all-logo{
+.all-logo {
     padding: $section-padding;
     display: flex;
     .single-logo {
@@ -883,51 +904,51 @@ footer.page-footer {
 }
 
 //Client say scss
-.client-say{
+.client-say {
     padding: $section-padding;
     background: #f9f9ff;
-    .client-say-headign{
+    .client-say-headign {
         text-align: center;
-        h2{
+        h2 {
             font-size: 36px;
             font-weight: 600;
             margin: 10px;
         }
-        p{
+        p {
             font-size: $text-font;
             font-weight: 300;
             color: #777;
         }
     }
-    .client-content{
+    .client-content {
         display: flex;
         justify-content: space-between;
-        .single-client{
+        .single-client {
             width: 49%;
             float: left;
-            .client-left{
+            .client-left {
                 width: 25%;
                 float: left;
                 display: inline-block;
-                .client-img{
+                .client-img {
                     width: 100px;
                     height: 100px;
                     border-radius: 50%;
                     overflow: hidden;
-                    img{
-                       width: 100px;
-                   }
+                    img {
+                        width: 100px;
+                    }
                 }
-                
+
             }
-            .client-info{
+            .client-info {
                 margin-left: 25%;
-                p{
+                p {
                     font-size: $text-font;
                     font-weight: 300;
                     color: #777;
-                 }
-                h4{
+                }
+                h4 {
                     font-size: 18px;
                     font-weight: 600;
                 }
@@ -937,7 +958,7 @@ footer.page-footer {
 }
 
 // Blog page SCSS
-.blog-banner{
+.blog-banner {
     background: url(../images/blog-bg.jpg);
     background-position: center;
     background-color: #ddd;
@@ -947,7 +968,7 @@ footer.page-footer {
     margin-top: 65px;
     position: relative;
     z-index: 0;
-    &::after{
+    &::after {
         position: absolute;
         top: 0;
         left: 0;
@@ -957,19 +978,19 @@ footer.page-footer {
         background: rgba(0, 0, 0, 0.5);
         z-index: -1;
     }
-    .banner-content{
+    .banner-content {
         color: $color-white;
         height: 600px;
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        h1{
+        h1 {
             font-size: 50px;
             font-weight: 600;
             text-align: center;
         }
-        p{
+        p {
             font-size: 16px;
             font-weight: 300;
             margin: 0;
@@ -979,16 +1000,16 @@ footer.page-footer {
 
 
 //blog-section scss
-.blog-section{
+.blog-section {
     padding: $section-padding;
     .single-big-blog {
         margin-bottom: 30px;
-        .card{
-            .card-content{
-                
+        .card {
+            .card-content {
+
                 .crd-btn {
                     margin-bottom: 20px;
-                    a{
+                    a {
                         font-size: 12px;
                         text-transform: capitalize;
                         font-weight: 300;
@@ -1000,34 +1021,36 @@ footer.page-footer {
                         color: #000;
                         transition: all .4s;
                         margin-right: 5px;
-                        &:hover{
+                        &:hover {
                             color: #fff;
                             background: $bg-color;
                         }
                     }
                 }
-                span{
+                span {
                     font-size: 36px;
                     font-weight: 600;
                     margin-bottom: 15px;
                 }
-                p{
+                p {
                     font-size: 14px;
                     font-weight: 300;
                     color: #777;
                     text-align: justify;
+                    margin-bottom: 20px;
                 }
+
             }
-            .card-action{
+            .card-action {
                 height: 100px;
-                .blog-user{
+                .blog-user {
                     width: 30%;
                     float: left;
-                    .user-img{
-                            width: 50px;
-                            height: 50px;
-                            overflow: hidden;
-                            float: left;
+                    .user-img {
+                        width: 50px;
+                        height: 50px;
+                        overflow: hidden;
+                        float: left;
                         img {
                             height: 90px;
                             width: 70px;
@@ -1038,12 +1061,12 @@ footer.page-footer {
                         margin-top: 5px;
                         font-size: 10px;
                         float: left;
-                        h4{
+                        h4 {
                             font-size: 14px;
                             font-weight: 500;
                             margin: 0;
                         }
-                        p{
+                        p {
                             font-size: 12px;
                             font-weight: 300;
                             color: #777;
@@ -1051,34 +1074,34 @@ footer.page-footer {
                         }
                     }
                 }
-                .blog-cmnt{
+                .blog-cmnt {
                     width: 70%;
                     float: left;
-                    ul{
+                    ul {
                         float: right;
                         padding: 0;
                         margin: 15px 0;
-                        li{
+                        li {
                             display: inline-block;
-                            a{
-                            margin: 0px 5px !important;
-                            color: #999 !important;
-                            font-size: 14px;
-                            text-transform: capitalize !important;
-                            transition: all .4s;
-                             &:hover{
+                            a {
+                                margin: 0px 5px !important;
+                                color: #999 !important;
+                                font-size: 14px;
+                                text-transform: capitalize !important;
+                                transition: all .4s;
+                                &:hover {
                                     color: #04091e !important;
-                                }       
+                                }
                             }
-                            
+
                         }
                     }
                 }
             }
         }
     }
-    aside{
-        .search-box{
+    aside {
+        .search-box {
             background: #f9f9ff;
             position: relative;
             margin-bottom: 30px;
@@ -1097,41 +1120,41 @@ footer.page-footer {
                 color: #83b6ff;
             }
         }
-        .aside-client{
+        .aside-client {
             margin-bottom: 30px;
-            .card{
+            .card {
                 background: #f9f9ff !important;
-                .card-image{
+                .card-image {
                     padding-top: 10px;
-                    img{
+                    img {
                         height: 110px;
                         width: 110px;
                         margin: 0px auto;
                         margin-top: 20px;
                     }
                 }
-                .card-content{
+                .card-content {
                     text-align: center;
-                    span{
+                    span {
                         font-size: 18px;
                         font-weight: 600;
                     }
-                    p{
+                    p {
                         font-size: $text-font;
                         font-weight: 300;
                         color: #777;
                     }
-                    ul{
+                    ul {
                         padding: 0;
                         margin: 20px 0;
-                        li{
+                        li {
                             display: inline-block;
-                            a{
+                            a {
                                 font-size: 16px;
                                 color: #04091e;
                                 margin: 0px 10px;
                                 transition: all .4s;
-                                &:hover{
+                                &:hover {
                                     color: #83b6ff !important;
                                 }
                             }
@@ -1140,47 +1163,47 @@ footer.page-footer {
                 }
             }
         }
-        .post-catgories{
+        .post-catgories {
             background: #f9f9ff;
             margin-bottom: 30px;
-            h4{
+            h4 {
                 font-size: 18px;
                 font-weight: 600;
                 margin-top: 0;
                 margin-bottom: 20px;
             }
-            .collection{
+            .collection {
                 border: none;
-                a{
+                a {
                     font-size: $text-font;
                     font-weight: 300;
                     color: #777;
                     margin-bottom: 10px;
-                    span{
+                    span {
                         float: right;
                     }
                 }
-                a.active{
+                a.active {
                     color: #fff;
                     background: $bg-color;
                 }
             }
         }
-        .recent-post{
+        .recent-post {
             background: #f9f9ff;
             margin-bottom: 30px;
-            h4{
+            h4 {
                 font-size: 18px;
                 font-weight: 600;
                 margin-top: 0;
                 margin-bottom: 20px;
             }
-            .card{
-                .card-image{
+            .card {
+                .card-image {
                     width: 100%;
                     height: 100px;
                     position: relative;
-                    &::after{
+                    &::after {
                         position: absolute;
                         top: 0;
                         left: 0;
@@ -1190,52 +1213,52 @@ footer.page-footer {
                         background: rgba(0, 0, 0, 0.50);
                         z-index: 0;
                     }
-                    img{
+                    img {
                         width: 100%;
                         height: 100%;
                     }
-                    .title-content{
+                    .title-content {
                         position: absolute;
                         top: 10px;
                         left: 10px;
                         width: 100%;
                         color: #fff;
                         z-index: 999;
-                        h4{
+                        h4 {
                             font-size: $text-font;
                             font-weight: 600;
                             margin-bottom: 10px;
                         }
-                        p{
+                        p {
                             font-size: $text-font;
                             font-weight: 300;
-                            span{
+                            span {
                                 float: right;
                                 margin-right: 10px;
-                                
-                                a{
+
+                                a {
                                     margin-right: 10px;
                                     transition: all .4s;
-                                    &:hover{
+                                    &:hover {
                                         color: #83b6ff !important;
                                     }
                                 }
                             }
                         }
-                   }
+                    }
                 }
             }
         }
-        .blog-tags{
-             background: #f9f9ff;
+        .blog-tags {
+            background: #f9f9ff;
             margin-bottom: 30px;
-            h4{
+            h4 {
                 font-size: 18px;
                 font-weight: 600;
                 margin-top: 0;
                 margin-bottom: 20px;
             }
-            a{
+            a {
                 font-size: 12px;
                 text-transform: capitalize;
                 font-weight: 300;
@@ -1249,7 +1272,7 @@ footer.page-footer {
                 margin-right: 5px;
                 margin-bottom: 10px;
                 transition: all .3s;
-                &:hover{
+                &:hover {
                     color: #fff;
                     background: $bg-color;
                 }
@@ -1260,20 +1283,33 @@ footer.page-footer {
 
 
 // Blog details page scss
-.prev-next-post{
+.p-border {
+    margin: 50px 0;
+    p.left-border {
+        padding: 20px;
+        background: #f9f9ff;
+        margin-left: 10px !important;
+        border-left: 2px solid #83b6ff;
+
+    }
+}
+
+
+.prev-next-post {
     padding: 0px 24px;
     width: 100%;
     height: 150px;
     margin-top: 40px;
-    .prev-blog{
+    border-bottom: 1px solid #ddd;
+    .prev-blog {
         width: 50%;
         float: left;
-        .prev-img{    
+        .prev-img {
             width: 30%;
             float: left;
             overflow: hidden;
             position: relative;
-            &::after{
+            &::after {
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -1282,15 +1318,15 @@ footer.page-footer {
                 height: 99%;
                 background: rgba(0, 0, 0, 0.7);
             }
-            a{
+            a {
                 background: #999;
                 width: 100%;
                 height: 100%;
-                img{
+                img {
                     width: 80px;
                     height: 80px;
                 }
-                i.fas.fa-arrow-left{
+                i.fas.fa-arrow-left {
                     position: absolute;
                     top: 38%;
                     left: 35%;
@@ -1298,7 +1334,7 @@ footer.page-footer {
                     font-size: 22px;
                     color: #fff;
                     transition: all .3s;
-                    &:hover{
+                    &:hover {
                         color: aqua;
                     }
                 }
@@ -1307,31 +1343,56 @@ footer.page-footer {
         .prev-text {
             width: 70%;
             float: left;
-            p{
+            p {
                 font-size: $text-font;
                 font-weight: 300;
                 color: #777;
                 margin-bottom: 5px;
             }
-            h4{
+            h4 {
                 font-size: 18px;
                 font-weight: 600;
                 margin: 0;
             }
         }
     }
-    
-    .next-blog{
+
+    .next-blog {
         width: 50%;
-        float: right;
-        .prev-img{    
+        float: left;
+        .prev-img {
             width: 30%;
             float: left;
             overflow: hidden;
-            a{
-                img{
+            position: relative;
+            &::after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: "";
+                width: 93%;
+                height: 99%;
+                background: rgba(0, 0, 0, 0.7);
+            }
+            a {
+                background: #999;
+                width: 100%;
+                height: 100%;
+                img {
                     width: 80px;
                     height: 80px;
+                }
+                i.fas.fa-arrow-right {
+                    position: absolute;
+                    top: 38%;
+                    left: 35%;
+                    z-index: 999;
+                    font-size: 22px;
+                    color: #fff;
+                    transition: all .3s;
+                    &:hover {
+                        color: aqua;
+                    }
                 }
             }
         }
@@ -1339,22 +1400,149 @@ footer.page-footer {
             width: 70%;
             float: left;
             text-align: right;
-            p{
+            p {
                 font-size: $text-font;
                 font-weight: 300;
                 color: #777;
                 margin-bottom: 5px;
-                margin-right: 10px;
+                margin-right: 5px;
             }
-            h4{
+            h4 {
                 font-size: 18px;
                 font-weight: 600;
                 margin: 0;
-                margin-right: 10px;
+                margin-right: 5px;
             }
         }
     }
 }
+
+
+.comment-area {
+    padding: 50px 0;
+    border-bottom: 1px solid #ddd;
+    h3 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 20px;
+    }
+    .single-cmnt{
+        margin: 20px;
+        height: 150px;
+        .cmnt-info{
+            width: 80%;
+            float: left;
+            .cmnt-img{
+                width: 15%;
+                overflow: hidden;
+                float: left;
+            }
+            .cmnt-name {
+                width: 85%;
+                float: left;
+                h4{
+                    font-size: 16px;
+                    font-weight: 400;
+                    margin: 0;
+                    margin-left: 5px;
+                }
+                span{
+                    font-size: 13px;
+                    font-weight: 300;
+                    color: #cccccc;
+                    margin-left: 5px;
+                }
+                p{
+                    font-size: $text-font;
+                    font-weight: 400;
+                    color: #777;
+                    margin-left: 5px;
+                    margin-top: 5px;
+                }
+            }
+        }
+        .reply-btn{
+            width: 20%;
+            float: right;
+            a {
+                font-size: 12px;
+                text-transform: uppercase;
+                font-weight: 400;
+                padding: 0px 25px;
+                height: 30px;
+                line-height: 32px;
+                border-radius: 0px;
+                background: none;
+                color: #000;
+                transition: all .4s;
+                margin-right: 5px;
+                margin-top: 30%;
+                float: right;
+                &:hover {
+                    color: #fff;
+                    background: $bg-color;
+                        }
+                    }
+        }
+    }
+    .cnmt-reply {
+        margin-left: 35px;
+    }
+}
+
+.blog-contact{
+    margin-bottom: 70px;
+    h4{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    input#name,
+    input#email,
+    input#fsubject,
+    textarea#textarea1{
+        background: #f9f9ff;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        padding: 0px 5px;
+        width: 100%;
+        &::placeholder{
+            font-size: $text-font;
+            font-weight: 300;
+            color: #777;
+        }
+    }
+    textarea#textarea1{
+        height: 150px;
+        padding: 5px;
+    }
+    .submit-btn{
+        text-align: right;
+        a{
+            font-size: $text-font;
+            font-weight: 600;
+            background: $bg-color;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            transition: all 1s;
+            &:hover {
+                background: $hover-bg-color;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
