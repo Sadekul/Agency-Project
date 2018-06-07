@@ -1426,13 +1426,13 @@ footer.page-footer {
         font-weight: 600;
         margin-left: 20px;
     }
-    .single-cmnt{
+    .single-cmnt {
         margin: 20px;
         height: 150px;
-        .cmnt-info{
+        .cmnt-info {
             width: 80%;
             float: left;
-            .cmnt-img{
+            .cmnt-img {
                 width: 15%;
                 overflow: hidden;
                 float: left;
@@ -1440,19 +1440,19 @@ footer.page-footer {
             .cmnt-name {
                 width: 85%;
                 float: left;
-                h4{
+                h4 {
                     font-size: 16px;
                     font-weight: 400;
                     margin: 0;
                     margin-left: 5px;
                 }
-                span{
+                span {
                     font-size: 13px;
                     font-weight: 300;
                     color: #cccccc;
                     margin-left: 5px;
                 }
-                p{
+                p {
                     font-size: $text-font;
                     font-weight: 400;
                     color: #777;
@@ -1461,7 +1461,7 @@ footer.page-footer {
                 }
             }
         }
-        .reply-btn{
+        .reply-btn {
             width: 20%;
             float: right;
             a {
@@ -1481,8 +1481,8 @@ footer.page-footer {
                 &:hover {
                     color: #fff;
                     background: $bg-color;
-                        }
-                    }
+                }
+            }
         }
     }
     .cnmt-reply {
@@ -1490,35 +1490,35 @@ footer.page-footer {
     }
 }
 
-.blog-contact{
+.blog-contact {
     margin-bottom: 70px;
-    h4{
+    h4 {
         font-size: 18px;
         font-weight: 600;
     }
     input#name,
     input#email,
     input#fsubject,
-    textarea#textarea1{
+    textarea#textarea1 {
         background: #f9f9ff;
         height: 40px;
         border: none;
         border-radius: 5px;
         padding: 0px 5px;
         width: 100%;
-        &::placeholder{
+        &::placeholder {
             font-size: $text-font;
             font-weight: 300;
             color: #777;
         }
     }
-    textarea#textarea1{
+    textarea#textarea1 {
         height: 150px;
         padding: 5px;
     }
-    .submit-btn{
+    .submit-btn {
         text-align: right;
-        a{
+        a {
             font-size: $text-font;
             font-weight: 600;
             background: $bg-color;
@@ -1535,45 +1535,45 @@ footer.page-footer {
 
 
 //privacy page scss
-.privacy-area{
+.privacy-area {
     padding: $section-padding;
-        .privacy-contetnt{
-            p{
-                font-size: $text-font;
-                font-weight: 300;
-                color: #777;
-                text-align: justify;
-             }
-            h4{
-                font-size: 18px;
-                font-weight: 600;
-                margin-top: 50px;
-            }
+    .privacy-contetnt {
+        p {
+            font-size: $text-font;
+            font-weight: 300;
+            color: #777;
+            text-align: justify;
+        }
+        h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 50px;
+        }
     }
 }
 
-.subscribe-area{
+.subscribe-area {
     padding: $section-padding;
     background: #f9f9ff;
-    .subscribe-content{
+    .subscribe-content {
         text-align: center;
         padding: $section-padding;
-         position: relative;
-            min-height: 300px;
+        position: relative;
+        min-height: 300px;
         background: #f9f9ff;
-        h2{
+        h2 {
             font-size: 36px;
             font-weight: 600;
             margin: 0;
             text-shadow: 2px 2px 10px #999;
         }
-        p{
+        p {
             margin: 10px 0;
             font-size: 14px;
             font-weight: 300;
             color: #777;
         }
-        
+
         input[type="email"] {
             width: 85% !important;
             float: left;
@@ -1583,7 +1583,7 @@ footer.page-footer {
             padding-left: 10px !important;
             margin-top: 20px;
         }
-        a{
+        a {
             position: absolute;
             bottom: 79px;
             right: 37px;
@@ -1594,10 +1594,10 @@ footer.page-footer {
             font-size: $text-font;
             font-weight: 500;
             text-transform: capitalize;
-                height: 39px;
+            height: 39px;
             background: $bg-color;
             transition: all .3s;
-            &:hover{
+            &:hover {
                 background: $hover-bg-color;
             }
             i.fas.fa-arrow-right {
@@ -1608,52 +1608,69 @@ footer.page-footer {
 }
 
 // Contact page scss
-.contact-address{
+.contact-address {
     padding: $section-padding;
-    .single-address{
+    .single-address {
         text-align: center;
         min-height: 200px;
-        h6{
+        h6 {
             font-size: $text-font;
             font-weight: 400;
             text-transform: uppercase;
         }
-        p{
+        p {
             font-size: $text-font;
             font-weight: 300;
             color: #777;
         }
     }
 }
-.map-style{
+
+.map-style {
     height: 400px;
     width: 100%;
 }
 
 
-.from-area{
+.from-area {
     padding: $section-padding;
-    .contact-form{
+    .contact-form {
         padding-top: 80px;
         padding-bottom: 80px;
+        input#first_name,
+        input#email,
+        input#subject,
+        textarea#textarea1 {
+            width: 100%;
+            height: 45px;
+            border: 1px solid #ddd;
+            padding: 0px 5px;
+            &::placeholder {
+                font-size: 13px;
+                font-weight: 300;
+                color: #777;
+            }
+        }
+        textarea#textarea1 {
+            height: 178px;
+        }
+        .submit-btn {
+            text-align: center;
+            a {
+                font-size: $text-font;
+                font-weight: 500;
+                background: $bg-color;
+                border-radius: 20px;
+                text-transform: uppercase;
+                transition: all 1s;
+                &:hover {
+                    background: $hover-bg-color;
+                }
+                i.fas.fa-arrow-right {
+                    font-size: 14px;
+                }
+            }
+        }
     }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

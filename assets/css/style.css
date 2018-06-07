@@ -1249,5 +1249,35 @@ footer.page-footer {
   .from-area .contact-form {
     padding-top: 80px;
     padding-bottom: 80px; }
+    .from-area .contact-form input#first_name,
+    .from-area .contact-form input#email,
+    .from-area .contact-form input#subject,
+    .from-area .contact-form textarea#textarea1 {
+      width: 100%;
+      height: 45px;
+      border: 1px solid #ddd;
+      padding: 0px 5px; }
+      .from-area .contact-form input#first_name::placeholder,
+      .from-area .contact-form input#email::placeholder,
+      .from-area .contact-form input#subject::placeholder,
+      .from-area .contact-form textarea#textarea1::placeholder {
+        font-size: 13px;
+        font-weight: 300;
+        color: #777; }
+    .from-area .contact-form textarea#textarea1 {
+      height: 178px; }
+    .from-area .contact-form .submit-btn {
+      text-align: center; }
+      .from-area .contact-form .submit-btn a {
+        font-size: 14px;
+        font-weight: 500;
+        background: linear-gradient(to right, #83B6FF 0%, #61D7FD 100%);
+        border-radius: 20px;
+        text-transform: uppercase;
+        transition: all 1s; }
+        .from-area .contact-form .submit-btn a:hover {
+          background: linear-gradient(to left, #83B6FF 0%, #61D7FD 100%); }
+        .from-area .contact-form .submit-btn a i.fas.fa-arrow-right {
+          font-size: 14px; }
 
 /*# sourceMappingURL=style.css.map */
